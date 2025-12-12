@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CSCI 412 Assignment 2 - Adam Bitz</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
 </resources>

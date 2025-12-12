@@ -42,6 +42,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(modifier: Modifier = Modifier, context: Context) {
     val explicitIntent = Intent(context, SecondActivity::class.java)
+    val cameraIntent = Intent(context, ImageActivity::class.java)
     val implicitIntent = Intent(Intent.ACTION_MAIN)
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -61,6 +62,13 @@ fun Greeting(modifier: Modifier = Modifier, context: Context) {
         ) {
             Text(
                 text = "Start Activity Implicitly"
+            )
+        }
+        Button(
+            onClick = { context.startActivity(cameraIntent) }
+        ) {
+            Text(
+                text = "View Image Activity"
             )
         }
     }
