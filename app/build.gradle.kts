@@ -58,4 +58,5 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation("com.github.bumptech.glide:glide:5.0.5")
     implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.4.0-alpha05")
 }
