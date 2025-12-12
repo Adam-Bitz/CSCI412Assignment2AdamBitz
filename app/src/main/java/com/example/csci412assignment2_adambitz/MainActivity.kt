@@ -18,12 +18,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.app.ActivityCompat
 import com.example.csci412assignment2_adambitz.ui.theme.CSCI412Assignment2AdamBitzTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        ActivityCompat.requestPermissions(
+            this,
+            arrayOf("com.example.csci412assignment2_adambitz.MSE412"),
+            100
+        )
         setContent {
             CSCI412Assignment2AdamBitzTheme {
                 Surface(
